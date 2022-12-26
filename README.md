@@ -1,0 +1,1 @@
+# Flask-RESTFUL CRUD Generator
