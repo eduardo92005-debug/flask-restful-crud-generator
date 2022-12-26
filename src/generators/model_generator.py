@@ -62,6 +62,11 @@ class ModelGenerator:
                                 attr_name=self.__model_attribute_name, 
                                 attr_type=self.__model_attribute_type,
                                 attr_args=self.__model_attributes)
+    
+    def save(self):
+        with open('model.py', 'w') as f:
+            f.write(self.generate())
+        f.close()
 
     @property
     def model_attributes(self):
